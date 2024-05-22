@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import Calculation from "~/components/calculation";
+import Campaign from "~/components/campaign";
 
 export const meta: MetaFunction = () => {
   return [
@@ -24,6 +25,7 @@ export default function Index() {
           Derfor kan prosenten bli lavere enn den ofte vises i skolesystemene.
         </p>
       </div>
+      <Campaign />
     </div>
   );
 }
