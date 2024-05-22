@@ -43,6 +43,7 @@ export default function Calculation() {
                   className="h-12 w-12 shrink-0 rounded-full"
                   onClick={() => setUdok((prevUdok) => prevUdok - 1)}
                   disabled={udok <= 1}
+                  data-umami-event="setUdok-decrease"
                 >
                   <MinusIcon className="h-4 w-4" />
                   <span className="sr-only">Trekk fra time</span>
@@ -56,6 +57,7 @@ export default function Calculation() {
                   className="h-12 w-12 shrink-0 rounded-full"
                   onClick={() => setUdok((prevUdok) => prevUdok + 1)}
                   disabled={udok >= 50}
+                  data-umami-event="setUdok-increase"
                 >
                   <PlusIcon className="h-4 w-4" />
                   <span className="sr-only">Legg til time</span>
@@ -71,6 +73,7 @@ export default function Calculation() {
                   className="h-12 w-12 shrink-0 rounded-full"
                   onClick={() => setFag((prevFag) => prevFag - 1)}
                   disabled={fag <= 1}
+                  data-umami-event="setFag-decrease"
                 >
                   <MinusIcon className="h-4 w-4" />
                   <span className="sr-only">Trekk fra time</span>
@@ -84,6 +87,7 @@ export default function Calculation() {
                   className="h-12 w-12 shrink-0 rounded-full"
                   onClick={() => setFag((prevFag) => prevFag + 1)}
                   disabled={fag >= 50}
+                  data-umami-event="setFag-increase"
                 >
                   <PlusIcon className="h-4 w-4" />
                   <span className="sr-only">Legg til time</span>
