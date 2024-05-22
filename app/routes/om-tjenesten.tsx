@@ -10,8 +10,7 @@ export const meta: MetaFunction = () => {
 
 export default function Route() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1 className="text-3xl text-blue-700 font-bold">MittFravær</h1>
+    <div className="mx-4 mt-8 mb-8">
       <About />
     </div>
   );

@@ -26,23 +26,6 @@ export default function Index() {
         </p>
       </div>
       {/* <Campaign /> */}
-      <footer className="m-4 border-t mt-8 mb-8">
-        <p className="text-sm text-center mt-4">
-          MittFravær av
-          <a
-            className="text-sm text-center block underline hover:text-primary"
-            href="https://svennevigflaaten.no"
-          >
-            Svennevig & Flaaten
-          </a>
-        </p>
-        <a
-          className="text-sm text-center block underline hover:text-primary"
-          href="https://instagram.com/mittfravaer"
-        >
-          Instagram
-        </a>
-      </footer>
     </div>
   );
 }

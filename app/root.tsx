@@ -18,6 +18,7 @@ import {
   useTheme,
 } from "./lib/client-hints";
 import clsx from "clsx";
+import Footer from "./components/footer";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -50,6 +51,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <Header />
         {children}
+        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>
