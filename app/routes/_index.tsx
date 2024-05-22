@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { ThemeToggle } from "./resources.theme-toggle";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,6 +14,7 @@ export default function Index() {
       <h1 className="text-3xl text-primary-foreground bg-primary font-bold">
         MittFravær
       </h1>
+      <ThemeToggle />
     </div>
   );
 }
