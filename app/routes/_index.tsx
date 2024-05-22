@@ -11,8 +11,11 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <div className="mx-4 mb-4">
-        <h1 className="text-3xl font-bold">Beregn fraværet ditt på sekunder</h1>
+      <div className="mx-4 mt-8 mb-8 text-center">
+        <h1 className="text-4xl font-bold mb-2">
+          Beregn fraværet ditt på sekunder.
+        </h1>
+        <p className="text-lg">Gjelder for høsten 2023 og våren 2024</p>
       </div>
       <Calculation />
       <div className="m-4">
