@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 export default function Footer() {
   return (
     <footer className="mx-4 border-t my-8 pt-4 pb-4 flex-row justify-between flex-wrap flex gap-2">
@@ -16,12 +18,12 @@ export default function Footer() {
       >
         Instagram
       </a> */}
-      <a
+      <Link
         className="text-sm text-center block underline hover:text-primary"
-        href="/om-tjenesten"
+        to="/om-tjenesten"
       >
         Om MittFravær
-      </a>
+      </Link>
     </footer>
   );
 }

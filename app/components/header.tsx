@@ -1,4 +1,5 @@
 // import { ThemeToggle } from "~/routes/resources.theme-toggle";
+import { Link } from "@remix-run/react";
 import { Badge } from "../components/ui/badge";
 
 export default function Header() {
@@ -6,13 +7,13 @@ export default function Header() {
     <header className="bg-background py-3 px-4 text-foreground mb-4 border-b sticky top-0">
       <div className="flex justify-between gap-4 items-center">
         <div className="sr-only">MittFravær</div>
-        <a href="/">
+        <Link to="/">
           <img
             src="/logo.svg"
             alt="Logo"
             className="w-32 sm:w-[10rem] h-auto"
           />
-        </a>
+        </Link>
         <div className="flex flex-row gap-4 items-center">
           <div className="hidden sm:block">
             <Badge variant="default" className="hover:bg-unset">
