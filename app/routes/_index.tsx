@@ -10,7 +10,9 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1 className="text-3xl text-blue-700 font-bold">MittFravær</h1>
+      <h1 className="text-3xl text-primary-foreground bg-primary font-bold">
+        MittFravær
+      </h1>
     </div>
   );
 }
