@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <div>
       <div className="mx-4 mt-8 mb-8 text-center">
-        <h1 className="text-4xl font-bold mb-2">
+        <h1 className="text-4xl font-bold mb-2 text-primary">
           Beregn fraværet ditt på sekunder.
         </h1>
         <p className="text-lg">Gjelder for høsten 2023 og våren 2024</p>
