@@ -1,6 +1,6 @@
 # MittFravær v. 2024
 
-Fornying av fraværskaklulatoren
+Fornying av fraværskalkulatoren
 
 ## Stack
 
