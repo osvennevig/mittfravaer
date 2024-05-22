@@ -10,7 +10,7 @@ export default function Header() {
           <img
             src="/logo.svg"
             alt="Logo"
-            className="w-34 sm:w-[10rem] h-auto"
+            className="w-32 sm:w-[10rem] h-auto"
           />
         </a>
         <div className="flex flex-row gap-4 items-center">
