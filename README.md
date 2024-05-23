@@ -1,20 +1,21 @@
-# MittFravær v. 2024
+# MittFravær 2024
 
 Fornying av fraværskalkulatoren
 
-## Stack
+## Teknisk stack
 
 - Remix + Vite
-- Tailwind + Shadcn UI
+- Tailwind
+- Shadcn UI
 - Umami
 
-## Files
+## Filer
 
 Figma ([Gå til Figma prosjektet](https://www.figma.com/design/i2QEaFqDPUvOuKWhs7dEHm/MittFrav%C3%A6r?node-id=0%3A1&t=4HUgTmnAQerfpt3j-1))
 
 ## Funksjoner
 
-- Dark/light mode
+- Dark/light mode (ferdig)
 - Underskriftskampanje (under utvikling)
 
 ## Kilder
