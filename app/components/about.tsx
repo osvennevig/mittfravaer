@@ -50,6 +50,23 @@ export default function About() {
           NRK P3 - Radio P3nyheter 16:00
         </a>
       </div>
+      <div className="mb-4 mt-8">
+        <h2 className="text-xl font-bold mb-2">Åpen kildekode</h2>
+        <p>
+          Hele kildekoden til MittFravær ligger ute for alle fra og med 22. mai
+          2024. Vi tror at åpenhet er viktig for at brukere skal kunne stole på
+          tjenesten. Her prøver vi også å henvise til kilder vi har brukt. Vi
+          setter pris på ris, ros eller tilbakemeldinger. Du finner koden på{" "}
+          <a
+            className="inline-block underline hover:text-primary"
+            href="https://github.com/osvennevig/mittfravaer"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            GitHub
+          </a>{" "}
+        </p>
+      </div>
     </div>
   );
 }
