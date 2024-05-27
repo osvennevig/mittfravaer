@@ -1,5 +1,6 @@
 import { ActionFunctionArgs, json, type MetaFunction } from "@remix-run/node";
 import { useLoaderData, useFetcher } from "@remix-run/react";
+import { useEffect, useState } from "react";
 import Calculation from "~/components/calculation";
 //import Campaign from "~/components/campaign";
 import { Button } from "~/components/ui/button";
@@ -76,9 +77,20 @@ export default function Index() {
   const fetcher = useFetcher();
   const isAdding = fetcher.state === "submitting";
   const successMessage = fetcher.data?.message;
+  const isLoading = fetcher.state === "loading";
+
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    if (isLoading) {
+      setName("");
+      fetcher.formData?.delete("name");
+    }
+  }, [isLoading, fetcher.formData]);
 
   return (
     <div>
+      {/* {isLoading ? <p>{JSON.stringify(isLoading)}</p> : null} */}
       <div className="mx-4 mt-8 mb-8 text-center">
         <h1 className="text-4xl font-extrabold mb-2 text-primary">
           Beregn fraværet ditt på sekunder.
@@ -110,37 +122,45 @@ export default function Index() {
                 <b>Underskriftskampanje</b> mot fraværsgrensen. Signer med
                 navnet ditt her!
               </p>
-              <Input
-                name="name"
-                required
-                className="bg-secondary mt-4 border-primary/60"
-                placeholder="Fornavn"
-              />
+              {!successMessage ? (
+                <>
+                  <Input
+                    name="name"
+                    maxLength={30}
+                    required
+                    className="bg-secondary mt-4 border-primary/60"
+                    placeholder="Fornavn"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
 
-              <div className="hidden">
-                <Input
-                  name="email"
-                  placeholder="e-post"
-                  autoComplete="off"
-                  tabIndex={-1}
-                  type="text"
-                />
-              </div>
+                  <div className="hidden">
+                    <Input
+                      name="email"
+                      placeholder="e-post"
+                      autoComplete="off"
+                      tabIndex={-1}
+                      type="text"
+                    />
+                  </div>
 
-              <Button
-                variant="default"
-                className="w-full mt-4"
-                disabled={isAdding}
-                type="submit"
-                name={"_action"}
-                value={"add"}
-                aria-label="Send"
-              >
-                {isAdding ? "Signerer..." : "Gi din stemme!"}
-              </Button>
+                  <Button
+                    variant="default"
+                    className="w-full mt-3"
+                    disabled={isAdding}
+                    type="submit"
+                    name={"_action"}
+                    value={"add"}
+                    aria-label="Gi din stemme!"
+                    data-umami-event="gi-din-stemme"
+                  >
+                    {isAdding ? "Signerer..." : "Gi din stemme!"}
+                  </Button>
+                </>
+              ) : null}
 
               {successMessage ? (
-                <div className="text-center text-base mt-6 font-semibold bg-primary-foreground text-primary px-3 py-2 rounded-sm w-fit mx-auto">
+                <div className="text-center text-base mt-4 font-semibold bg-primary text-primary-foreground px-4 py-2 rounded-full w-fit mx-auto">
                   {successMessage}
                 </div>
               ) : null}
