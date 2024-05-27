@@ -68,7 +68,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
     // Return a success response
     console.log("Form submitted");
     //return new Response("Form submitted successfully", { status: 200 });
-    return json({ message: `Takk for din signatur, ${name}!` });
+    return json({ message: `Takk for din signatur`, messageName: name });
   }
 };
 
@@ -77,6 +77,7 @@ export default function Index() {
   const fetcher = useFetcher();
   const isAdding = fetcher.state === "submitting";
   const successMessage = fetcher.data?.message;
+  const messageName = fetcher.data?.messageName;
   const isLoading = fetcher.state === "loading";
 
   const [name, setName] = useState("");
@@ -160,8 +161,9 @@ export default function Index() {
               ) : null}
 
               {successMessage ? (
-                <div className="text-center text-base mt-4 font-semibold bg-primary text-primary-foreground px-4 py-2 rounded-full w-fit mx-auto">
+                <div className="text-center text-base mt-4 bg-primary text-primary-foreground px-4 py-2 rounded-full w-fit mx-auto">
                   {successMessage}
+                  <span className="font-semibold"> {messageName}!</span>
                 </div>
               ) : null}
             </div>
