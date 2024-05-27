@@ -45,6 +45,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ClientHintCheck nonce={nonce} />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="bef96b64-6e03-46bb-bddd-69fb10a5e799"
+        ></script>
         <Meta />
         <Links />
       </head>
@@ -55,11 +60,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ScrollRestoration />
         <Scripts />
       </body>
-      <script
-        defer
-        src="https://cloud.umami.is/script.js"
-        data-website-id="bef96b64-6e03-46bb-bddd-69fb10a5e799"
-      ></script>
     </html>
   );
 }
