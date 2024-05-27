@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 export default function Footer() {
   return (
-    <footer className="mx-4 border-t my-8 pt-4 pb-4 flex-row justify-center flex-wrap flex gap-2">
+    <footer className="mx-4 border-t my-8 pt-4 pb-4 flex-row justify-center flex-wrap flex gap-8">
       <p className="text-sm ">
         MittFravær av{" "}
         <a

@@ -93,7 +93,7 @@ export default function Index() {
     <div>
       {/* {isLoading ? <p>{JSON.stringify(isLoading)}</p> : null} */}
       <div className="mx-4 mt-8 mb-8 text-center">
-        <h1 className="text-4xl font-extrabold mb-2 text-primary">
+        <h1 className="text-4xl font-extrabold mb-2 text-primary dark:text-white">
           Beregn fraværet ditt på sekunder.
         </h1>
         <p className="text-lg">Gjelder for høsten 2023 og våren 2024</p>
