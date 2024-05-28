@@ -1,5 +1,5 @@
 import { ActionFunctionArgs, json, type MetaFunction } from "@remix-run/node";
-import { useLoaderData, useFetcher } from "@remix-run/react";
+import { useFetcher } from "@remix-run/react";
 import { useEffect, useState } from "react";
 import Calculation from "~/components/calculation";
 //import Campaign from "~/components/campaign";
