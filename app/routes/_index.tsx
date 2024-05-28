@@ -129,7 +129,7 @@ export default function Index() {
                     name="name"
                     maxLength={30}
                     required
-                    className="bg-secondary mt-4 border-primary/60"
+                    className="bg-secondary mt-4 border-primary/60 text-base"
                     placeholder="Fornavn"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
