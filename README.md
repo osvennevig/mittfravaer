@@ -7,6 +7,7 @@ Fornying av fraværskalkulatoren
 - Remix + Vite
 - Tailwind
 - Shadcn UI
+- Supabase
 - Umami
 
 ## Filer
@@ -16,7 +17,7 @@ Figma ([Gå til Figma prosjektet](https://www.figma.com/design/i2QEaFqDPUvOuKWhs
 ## Funksjoner
 
 - Dark/light mode (ferdig)
-- Underskriftskampanje (under utvikling)
+- Underskriftskampanje (ferdig)
 
 ## Kilder
 
