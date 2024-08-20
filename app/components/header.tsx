@@ -17,12 +17,12 @@ export default function Header() {
         <div className="flex flex-row gap-4 items-center">
           <div className="hidden sm:block">
             <Badge variant="default" className="hover:bg-unset">
-              Oppdatert for 2023 - 2024
+              Oppdatert for 2024 - 2025
             </Badge>
           </div>
           <div className="block sm:hidden">
             <Badge variant="default" className="hover:bg-unset">
-              2023 - 2024
+              2024 - 2025
             </Badge>
           </div>
           {/* <div>
