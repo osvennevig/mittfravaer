@@ -99,7 +99,7 @@ export default function Index() {
         <p className="text-lg">Gjelder for høsten 2024 og våren 2025</p>
       </div>
 
-      <div className="mx-auto max-w-sm mb-6">
+      {/* <div className="mx-auto max-w-sm mb-6">
         <div className="mx-3">
           <fetcher.Form method="post">
             <div className="bg-primary/20 max-w-sm mx-auto p-6 rounded-lg border border-primary/60">
@@ -117,7 +117,7 @@ export default function Index() {
             //   Ingen data fra supabase
             // </div>
             null} */}
-
+      {/* 
               <span className="border-b h-[1px]"></span>
               <p className="text-sm">
                 <b>Underskriftskampanje</b> mot fraværsgrensen. Signer med
@@ -169,7 +169,7 @@ export default function Index() {
             </div>
           </fetcher.Form>
         </div>
-      </div>
+      </div> */}
 
       <Calculation />
       <div className="m-4 mx-auto max-w-xs">
