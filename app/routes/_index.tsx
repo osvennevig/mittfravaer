@@ -1,11 +1,11 @@
 import { ActionFunctionArgs, json, type MetaFunction } from "@remix-run/node";
-import { useFetcher } from "@remix-run/react";
-import { useEffect, useState } from "react";
+// import { useFetcher } from "@remix-run/react";
+// import { useEffect, useState } from "react";
 import Calculation from "~/components/calculation";
 //import Campaign from "~/components/campaign";
-import { Button } from "~/components/ui/button";
-import { Input } from "~/components/ui/input";
-import { supabase } from "~/supabase";
+// import { Button } from "~/components/ui/button";
+// import { Input } from "~/components/ui/input";
+//import { supabase } from "~/supabase";
 
 export const meta: MetaFunction = () => {
   return [
@@ -41,53 +41,53 @@ export const meta: MetaFunction = () => {
 // };
 
 // handle the insertion of a submission on the server
-export const action = async ({ request }: ActionFunctionArgs) => {
-  let formData = await request.formData();
-  let { _action, ...values } = Object.fromEntries(formData);
+// export const action = async ({ request }: ActionFunctionArgs) => {
+//   let formData = await request.formData();
+//   let { _action, ...values } = Object.fromEntries(formData);
 
-  if (_action === "add") {
-    console.log("values:", values);
-    const email = values?.email;
-    const name = values?.name.toString();
+//   if (_action === "add") {
+//     console.log("values:", values);
+//     const email = values?.email;
+//     const name = values?.name.toString();
 
-    console.log(formData);
-    console.log(values);
+//     console.log(formData);
+//     console.log(values);
 
-    if (email) {
-      console.log("Missing email");
-      return new Response("Email", { status: 400 });
-    }
+//     if (email) {
+//       console.log("Missing email");
+//       return new Response("Email", { status: 400 });
+//     }
 
-    const { error } = await supabase.from("messages").insert([{ name }]);
+//     const { error } = await supabase.from("messages").insert([{ name }]);
 
-    if (error) {
-      console.log("Error", error.message);
+//     if (error) {
+//       console.log("Error", error.message);
 
-      return new Response(error.message, { status: 500 });
-    }
-    // Return a success response
-    console.log("Form submitted");
-    //return new Response("Form submitted successfully", { status: 200 });
-    return json({ message: `Takk for din signatur`, messageName: name });
-  }
-};
+//       return new Response(error.message, { status: 500 });
+//     }
+//     // Return a success response
+//     console.log("Form submitted");
+//     //return new Response("Form submitted successfully", { status: 200 });
+//     return json({ message: `Takk for din signatur`, messageName: name });
+//   }
+// };
 
 export default function Index() {
   //const { messages, error } = useLoaderData<typeof loader>();
-  const fetcher = useFetcher();
-  const isAdding = fetcher.state === "submitting";
-  const successMessage = fetcher.data?.message;
-  const messageName = fetcher.data?.messageName;
-  const isLoading = fetcher.state === "loading";
+  // const fetcher = useFetcher();
+  // const isAdding = fetcher.state === "submitting";
+  // const successMessage = fetcher.data?.message;
+  // const messageName = fetcher.data?.messageName;
+  // const isLoading = fetcher.state === "loading";
 
-  const [name, setName] = useState("");
+  // const [name, setName] = useState("");
 
-  useEffect(() => {
-    if (isLoading) {
-      setName("");
-      fetcher.formData?.delete("name");
-    }
-  }, [isLoading, fetcher.formData]);
+  // useEffect(() => {
+  //   if (isLoading) {
+  //     setName("");
+  //     fetcher.formData?.delete("name");
+  //   }
+  // }, [isLoading, fetcher.formData]);
 
   return (
     <div>
