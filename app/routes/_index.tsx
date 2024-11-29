@@ -1,7 +1,9 @@
-import { ActionFunctionArgs, json, type MetaFunction } from "@remix-run/node";
+import { type MetaFunction } from "@remix-run/node";
+import Calculation from "~/components/calculation";
+import { Badge } from "~/components/ui/badge";
+import { Button } from "~/components/ui/button";
 // import { useFetcher } from "@remix-run/react";
 // import { useEffect, useState } from "react";
-import Calculation from "~/components/calculation";
 //import Campaign from "~/components/campaign";
 // import { Button } from "~/components/ui/button";
 // import { Input } from "~/components/ui/input";
@@ -92,7 +94,30 @@ export default function Index() {
   return (
     <div>
       {/* {isLoading ? <p>{JSON.stringify(isLoading)}</p> : null} */}
-      <div className="mx-4 mt-8 mb-8 text-center">
+      <div className="mx-2">
+        <div className="mt-8 text-center border-2 border-dotted w-fit mx-auto bg-primary/5 border-primary dark:bg-primary/10 p-3 rounded-xl">
+          <Badge className="mb-2" variant="outline">
+            Annonse
+          </Badge>
+          <p className="mb-1 font-bold text-base">
+            Klarer du å legge den vekk?
+          </p>
+          <p className="mb-2 max-w-[320px] text-sm">
+            Har du kjent på det selv? Du er sammen med venner eller familie, men
+            mobilen får mer oppmerksomhet enn de rundt deg.
+          </p>
+          <Button className="flex flex-col gap-2 w-fit mx-auto" asChild>
+            <a
+              href="https://www.leggdenvekk.no"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Prøv Leggdenvekk.no
+            </a>
+          </Button>
+        </div>
+      </div>
+      <div className="mx-4 mt-6 mb-8 text-center">
         <h1 className="text-4xl font-extrabold mb-2 text-primary dark:text-white">
           Beregn fraværet ditt på sekunder.
         </h1>
