@@ -109,8 +109,8 @@ export default function Index() {
           <Button className="flex flex-col gap-2 w-fit mx-auto" asChild>
             <a
               href="https://www.leggdenvekk.no"
-              target="_blank"
-              rel="noreferrer"
+              //target="_blank"
+              // rel="noreferrer"
             >
               Prøv Leggdenvekk.no
             </a>
