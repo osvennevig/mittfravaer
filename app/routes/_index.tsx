@@ -94,7 +94,7 @@ export default function Index() {
   return (
     <div>
       {/* {isLoading ? <p>{JSON.stringify(isLoading)}</p> : null} */}
-      <div className="mx-2">
+      {/* <div className="mx-2">
         <div className="mt-8 text-center border-2 border-dotted w-fit mx-auto bg-primary/5 border-primary dark:bg-primary/10 p-3 rounded-xl">
           <Badge className="mb-2" variant="outline">
             Annonse
@@ -116,7 +116,7 @@ export default function Index() {
             </a>
           </Button>
         </div>
-      </div>
+      </div> */}
       <div className="mx-4 mt-6 mb-8 text-center">
         <h1 className="text-4xl font-extrabold mb-2 text-primary dark:text-white">
           Beregn fraværet ditt på sekunder.
