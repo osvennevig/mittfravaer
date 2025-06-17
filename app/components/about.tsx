@@ -10,8 +10,8 @@ export default function About() {
         før man når 10 prosenten.
         <br />
         <br /> Tjenesten er gratis å bruke, og ble laget av kvitér UB ved
-        Dahlske videregående skole i 2018-2019. Den driftes nå av selskapet
-        Svennevig & Flaaten AS.
+        Dahlske videregående skole i 2018-2019. Den driftes fortsatt av Ole
+        Svennevig og Julian Flaaten.
         <br /> <br /> NB! På grunn av endringer i fraværsgrensen under Covid var
         tjenesten utilgjengelig i en periode fra 2020-2022.
       </div>
@@ -64,7 +64,30 @@ export default function About() {
             rel="noreferrer noopener"
           >
             GitHub
+          </a>
+          .{" "}
+        </p>
+        <br />
+        <p>
+          Andre prosjekter vi arbeider med er{" "}
+          <a
+            className="inline-block underline hover:text-primary"
+            href="https://www.leggdenvekk.no"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Leggdenvekk.no
           </a>{" "}
+          og{" "}
+          <a
+            className="inline-block underline hover:text-primary"
+            href="https://www.bilen.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Bilen.app
+          </a>
+          .
         </p>
       </div>
     </div>
