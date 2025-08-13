@@ -121,7 +121,7 @@ export default function Index() {
         <h1 className="text-4xl font-extrabold mb-2 text-primary dark:text-white">
           Beregn fraværet ditt på sekunder.
         </h1>
-        <p className="text-lg">Gjelder for høsten 2024 og våren 2025</p>
+        <p className="text-lg">Gjelder for høsten 2025 og våren 2026</p>
       </div>
 
       {/* <div className="mx-auto max-w-sm mb-6">
