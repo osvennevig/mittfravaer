@@ -117,6 +117,25 @@ export default function Index() {
           </Button>
         </div>
       </div> */}
+
+      <div className="mx-2">
+        <div className="mt-8 text-center border-2 border-dotted w-fit mx-auto bg-primary/5 border-primary dark:bg-primary/10 p-3 rounded-xl">
+          <Badge className="mb-2" variant="outline">
+            Endringer!
+          </Badge>
+          <p className="mb-1 font-bold text-base">Egenmelding opp til 10%</p>
+          <p className="mb-2 max-w-[320px] text-sm">
+            + nå er teoretisk og praktisk førerprøve inkludert i listen over
+            unntak fra fraværsgrensen.
+          </p>
+          <Button className="flex flex-col gap-2 w-fit mx-auto" asChild>
+            <a href="https://www.regjeringen.no/no/aktuelt/kunnskapsministeren-endrer-fravarsreglene-i-videregaende-skole/id3075576/">
+              Les mer om endringene
+            </a>
+          </Button>
+        </div>
+      </div>
+
       <div className="mx-4 mt-6 mb-8 text-center">
         <h1 className="text-4xl font-extrabold mb-2 text-primary dark:text-white">
           Beregn fraværet ditt på sekunder.
